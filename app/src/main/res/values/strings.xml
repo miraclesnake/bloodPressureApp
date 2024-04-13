@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Blood Pressure BMP Tracker</string>
+    <string name="new_record">New record</string>
+    <string name="history_appbar">History</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history">All History</string>
+    <string name="systolic">Systolic</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="pulse">Pulse</string>
+    <string name="pulse_record">Pulse: %1$d</string>
+    <string name="blood_pressure_measure">mmHg</string>
+    <string name="pulse_measure">BHP</string>
+    <string name="date_and_time"><![CDATA[Date & Time]]></string>
+    <string name="pick_date">Date</string>
+    <string name="pick_time">Time</string>
+    <string name="save">Save</string>
+    <string name="no_records">There`s no records yet</string>
+</resources>
