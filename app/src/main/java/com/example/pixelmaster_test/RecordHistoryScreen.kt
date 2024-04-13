@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pixelmaster_test.databinding.FragmentRecordHistoryScreenBinding
 import org.json.JSONException
@@ -24,6 +26,9 @@ class RecordHistoryScreen : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         recordScreen = FragmentRecordHistoryScreenBinding.inflate(inflater, container, false)
+        val toolbar = requireActivity().findViewById<Toolbar>(R.id.toolbar)
+        toolbar.visibility = View.VISIBLE
+        toolbar.setBackgroundColor(ContextCompat.getColor(requireActivity(), com.google.android.material.R.color.design_default_color_primary))
         return recordScreen.root
     }
 

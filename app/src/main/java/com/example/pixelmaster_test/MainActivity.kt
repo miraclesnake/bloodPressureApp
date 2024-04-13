@@ -23,8 +23,12 @@ class MainActivity : AppCompatActivity() {
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         val navController = navHostFragment.navController
+        setSupportActionBar(main.toolbar)
+        main.toolbar.setBackgroundColor(getColor(com.google.android.material.R.color.design_default_color_primary))
+        main.toolbar.setTitleTextColor(getColor(R.color.white))
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

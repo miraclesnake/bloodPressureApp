@@ -9,6 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
 import com.example.pixelmaster_test.databinding.FragmentRecordCreationScreenBinding
 import org.json.JSONObject
 import java.io.BufferedWriter
@@ -29,6 +31,9 @@ class RecordCreationScreen : Fragment() {
         recordCreationScreen =
             FragmentRecordCreationScreenBinding.inflate(inflater, container, false)
 
+        val toolbar = requireActivity().findViewById<Toolbar>(R.id.toolbar)
+        toolbar.visibility = View.VISIBLE
+        toolbar.setBackgroundColor(ContextCompat.getColor(requireActivity(), com.google.android.material.R.color.design_default_color_primary))
         return recordCreationScreen.root
     }
 
